@@ -74,8 +74,4 @@ Feel free to reach out to me at:
 
 ---
 
-<<<<<<< HEAD
 Thank you for visiting my portfolio website repository! If you have any feedback or suggestions, feel free to connect.
-=======
-Thank you for visiting my portfolio website repository! If you have any feedback or suggestions, feel free to connect.
->>>>>>> 0aff62c03cf60bb84cb511f227298fae00a8f18a
