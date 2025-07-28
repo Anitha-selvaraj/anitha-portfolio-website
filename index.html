@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Anitha</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Anitha</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Anitha profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Anitha</h1>
+        <p class="section__text__p2">Aspiring Java Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/Anitha S Resume.pdf')">Resume</button>
+          <button class="btn btn-color-1" onclick="scrollToSection('#contact')">Contact Info</button>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="window.open('https://www.linkedin.com/in/anitha2005/', '_blank')"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My GitHub profile"
+              class="icon"
+              onclick="window.open('https://github.com/Anitha-selvaraj', '_blank')"
+            />
+            <img
+              src="./assets/salesforce.png"
+              alt="My Salesforce profile"
+              class="icon salesforce-icon"
+              onclick="window.open('https://www.salesforce.com/trailblazer/profile', '_blank')"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="about-frame-container">
+        <div class="about-frame">
+          <p>
+            I am an undergraduate student with a strong passion for the IT field, especially software development. I thrive on learning and exploring the latest technologies, tools, and methodologies to build innovative and efficient solutions that solve real-world problems. My journey has been fueled by a continuous desire to grow and improve, both technically and professionally.
+          </p>
+          <p>
+            Beyond my academic pursuits, I actively participate in workshops, hackathons, and self-learning programs to enhance my technical proficiency. I have completed certifications in Java, Python, and cybersecurity, which have broadened my expertise in backend development, software security, and problem-solving.
+          </p>
+          <p>
+            I believe in the power of collaboration and teamwork. I enjoy working on projects that challenge me to think creatively and adapt to different scenarios. As someone who values growth, I am open to mentorship, constructive feedback, and opportunities that allow me to learn from experienced professionals in the industry.
+          </p>
+          <p>
+            My goal is to contribute to meaningful projects, build innovative solutions, and become a successful IT professional. I am excited to connect, collaborate, and embark on new challenges that can shape my career journey. Let's create something amazing together!
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#skills'"
+    />
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-frame">
+        <div class="skills-description">
+          <p>
+            Here are some of the core skills I am proficient in. These
+            technologies help me build strong solutions, from frontend to
+            backend, and improve overall productivity.
+          </p>
+          <p>
+            I'm continuously learning and improving my expertise to stay up to
+            date with the latest advancements.
+          </p>
+        </div>
+        <div class="skills-boxes">
+          <div class="skill-box"><h3>Java</h3></div>
+          <div class="skill-box"><h3>Python</h3></div>
+          <div class="skill-box"><h3>HTML & CSS</h3></div>
+          <div class="skill-box"><h3>Excel</h3></div>
+          <div class="skill-box"><h3>Word</h3></div>
+          <div class="skill-box"><h3>Canva Design</h3></div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#education'"
+      />
+    </section>
+    <section id="education">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Education</h1>
+      <div class="education-frame">
+        <div class="education-box">
+          <h2>V.S.B. ENGINEERING COLLEGE</h2>
+          <p>(2022 - 2026)</p>
+          <p>CGPA: 8.8</p>
+        </div>
+        <div class="education-box">
+          <h2>BHARATHI VIDHYALAYA MATRICULATION HIGHER SECONDARY SCHOOL</h2>
+          <p>(2021 - 2022)</p>
+          <p>HSC: 79.9%</p>
+        </div>
+        <div class="education-box">
+          <h2>BHARATHI VIDHYALAYA MATRICULATION HIGHER SECONDARY SCHOOL</h2>
+          <p>(2019 - 2020)</p>
+          <p>SSLC: 79.9%</p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-container">
+        <div class="contact-info-box">
+          <p>Email: <a href="mailto:anitha11062005@gmail.com">anitha11062005@gmail.com</a></p>
+        </div>
+        <div class="contact-info-box">
+          <p>Phone: <a href="tel:+919566974019">+91 95669 74019</a></p>
+        </div>
+        <div class="contact-info-box">
+          <p>Location: Tiruppur, Tamil Nadu, India</p>
+        </div>
+      </div>
+      <form id="contactForm" class="contact-form-container">
+        <input type="text" id="name" name="name" placeholder="Your Name" class="contact-input" required />
+        <input type="email" id="email" name="email" placeholder="Your Email" class="contact-input" required />
+        <input type="text" id="subject" name="subject" placeholder="Subject" class="contact-input" required />
+        <textarea id="message" name="message" placeholder="Write something..." class="contact-input textarea" required></textarea>
+        <button type="submit" class="send-button">Send</button>
+        <p id="responseMsg" style="margin-top: 1rem;"></p>
+      </form>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Anitha. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
